@@ -8,10 +8,11 @@
             @vite(['resources/css/app.css', 'resources/js/app.js'])
         @endif
     </head>
+
     <body class="bg-neutral-600 h-[1500px]">
-        <header class="bg-sky-200/75 backdrop-blur-md p-5 mt-5 border border-white mx-48 shadow-xl shadow-white/45 rounded-full z-50 top-0 sticky">
+        <header class="bg-sky-200/75 backdrop-blur-md p-5 mt-5 border border-white mx-101 shadow-xl shadow-white/45 rounded-full z-50 top-0 sticky">
             <div class="flex justify-between items-center px-4">
-                <h1 class="text-3xl">
+                <h1 class="absolute left-[-300px] top-1/2 -translate-y-1/2 text-3xl">
                     <a class="text-white" href="/"> <span class="font-black">SQUASH</span><span class="font-extralight">PLASH</span></a>
                 </h1>
                 <nav class="flex gap-5 items-center">
@@ -24,6 +25,6 @@
                 </nav>
             </div>
         </header>
-        
+        </div>
     </body>
 </html>
