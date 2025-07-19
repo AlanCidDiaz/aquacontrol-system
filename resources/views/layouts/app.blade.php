@@ -10,27 +10,34 @@
     </head>
 
     {{-- h-[1500px] --}}
-    <body class="bg-neutral-900 h-[1500px]">
+    <body class="dark bg-gray-100 dark:bg-neutral-900 h-[1500px]">
 
         <!-- ===== HEADER: Navegación principal con logo y sticky ===== -->
-        <header class="bg-sky-200/75 backdrop-blur-md p-5 mt-5 border border-white mx-115 shadow-xl shadow-white/45 rounded-full z-50 top-0 sticky">
+        <header class="bg-gray-300/75 dark:bg-sky-200/75 backdrop-blur-md p-5 mt-5 border border-black border-hidden dark:border-white mx-115 dark:shadow-xl shadow-inner shadow-black/35 dark:shadow-white/45 rounded-full z-50 top-0 sticky">
             <div class="flex justify-between items-center px-4">
-
+{{-- shadow-inner shadow-black/35 --}}
                  <!-- Logotipo posicionado con absolute a la izquierda -->
                 <h1 class="absolute left-[-300px] top-1/2 -translate-y-1/2 text-3xl">
-                    <a class="text-white" href="/"> <span class="font-black">SQUASH</span><span class="font-extralight">PLASH</span></a>
+                    <a class="text-white" href="/"> <span class="text-black dark:text-white font-black">SQUASH</span><span class="text-black dark:text-white font-extralight">PLASH</span></a>
                 </h1>
 
                  <!-- Menú de navegación principal -->
-                <nav class="flex gap-5 items-center">
-                    <a class="text-white uppercase font-black hover:text-cyan-300 text-sm" href="#">Inicio</a>
-                    <a class="text-white uppercase font-black hover:text-cyan-300 text-sm" href="#">Clases</a>
-                    <a class="text-white uppercase font-black hover:text-cyan-300 text-sm" href="#">Costos</a>
-                    <a class="text-white uppercase font-black hover:text-cyan-300 text-sm" href="#">Instructores</a>
-                    <a class="text-white uppercase font-black hover:text-cyan-300 text-sm" href="#">Horarios</a>
-                    <a class="text-white uppercase font-black hover:text-cyan-300 text-sm" href="#">Contacto</a>
+                <nav class="flex gap-5 items-center text-neutral-900 dark:text-white">
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Inicio</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Clases</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Costos</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Instructores</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Horarios</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Contacto</a>
                 </nav>
 
+                 <!-- Botones de modo Dark y Light usando librería Lucide-->
+                <div class="absolute right-[-300px] top-7 -translate-y-1/2">
+                    <div class="cursor-pointer">
+                        <i data-lucide="Sun" class="size-8 stroke-gray-100 hidden dark:inline-block"></i>
+                        <i data-lucide="Moon" class="size-8 stroke-gray-600 inline-block dark:hidden"></i>
+                    </div>
+                </div>
             </div>
         </header>
 
