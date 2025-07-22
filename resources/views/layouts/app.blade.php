@@ -10,7 +10,7 @@
     </head>
 
     {{-- h-[1500px] --}}
-    <body class="dark bg-gray-100 dark:bg-sky-950 transition-all duration-700">
+    <body class="dark bg-gray-100 dark:bg-sky-950 transition-all duration-800">
         <!-- ===== HEADER: Navegación principal con logo y sticky ===== -->
         <header class="bg-gray-300/75 dark:bg-sky-200/75 backdrop-blur-md p-5 mt-5 border border-black border-hidden dark:border-white mx-115 dark:shadow-xl shadow-inner shadow-black/35 dark:shadow-white/45 rounded-full z-50 top-0 sticky">
             <div class="flex justify-between items-center px-4">
