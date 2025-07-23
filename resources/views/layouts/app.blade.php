@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,10 +9,10 @@
         @endif
     </head>
 
-    {{-- h-[1500px] --}}
+    {{-- h-[1500px] Para probar el index-z en el nav: Se pone en el Body --}}
     <body class="dark bg-gray-100 dark:bg-sky-950 transition-all duration-800">
         <!-- ===== HEADER: Navegación principal con logo y sticky ===== -->
-        <header class="bg-gray-300/75 dark:bg-sky-200/75 backdrop-blur-md p-5 mt-5 border border-black border-hidden dark:border-white mx-115 dark:shadow-xl shadow-inner shadow-black/35 dark:shadow-white/45 rounded-full z-50 top-0 sticky">
+        <header class="bg-gray-300/75 dark:bg-sky-200/75 backdrop-blur-md p-5 mt-5 border border-black border-hidden dark:border-white mx-125 dark:shadow-xl shadow-inner shadow-black/35 dark:shadow-white/45 rounded-full z-50 top-0 sticky">
             <div class="flex justify-between items-center px-4">
                  <!-- Logotipo posicionado con absolute a la izquierda -->
                 
@@ -22,12 +22,11 @@
 
                  <!-- Menú de navegación principal -->
                 <nav class="flex gap-5 items-center text-neutral-900 dark:text-white">
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Inicio</a>
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Clases</a>
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Costos</a>
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Instructores</a>
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Horarios</a>
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#">Contacto</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#inicio">Inicio</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#clases">Clases</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#instructores">Instructores</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#costos">Costos</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#contacto">Contacto</a>
                 </nav>
 
                  <!-- Botones de modo Dark y Light usando librería Lucide-->
@@ -45,11 +44,11 @@
             @yield('contenido')
         </main>
 
-       <footer class="w-full bg-sky-600 text-white p-6 mt-10">
+       <footer class="w-full bg-gray-100 dark:bg-neutral-500 text-neutral-800 dark:text-neutral-200 py-10">
             <div class="container mx-auto text-center">
                 <p class="text-sm">&copy; {{now()->year}} SQUASHPLASH.</p>
                 <p class="text-sm">Todos los derechos reservados.</p>
-                <p class="text-xs mt-2 text-cyan-300">Desarrollado por Alan Cid Díaz</p>
+                <p class="text-xs mt-2">Desarrollado por Alan Cid Díaz</p>
             </div>
         </footer>
 
