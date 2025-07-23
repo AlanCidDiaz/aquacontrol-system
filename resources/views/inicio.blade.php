@@ -12,7 +12,7 @@
             <h2 class="text-white font-extrabold text-4xl">Bienvenido a Natación</h2>
             <p class="text-white text-2xs mt-2.5">Las mejores clases de natación con instructores certificados.</p>
             <div class="mt-8">
-                <a href="#" class="bg-sky-500 px-3 py-4 mt-2.5 rounded-md text-white cursor-pointer hover:bg-gray-50 hover:text-sky-500 transition-colors duration-300 dark:bg-white font-bold dark:text-sky-600 dark:hover:bg-sky-500 dark:hover:text-white">Explorar Clases</a>
+                <a href="/login" class="bg-sky-500 px-3 py-4 mt-2.5 rounded-md text-white cursor-pointer hover:bg-gray-50 hover:text-sky-500 transition-colors duration-300 dark:bg-white font-bold dark:text-sky-600 dark:hover:bg-sky-500 dark:hover:text-white">Iniciar Sesión</a>
             </div>
         </div>
     </div>
@@ -110,7 +110,7 @@
     <!-- Sección Contácto mt-15 mb-15-->
     <section id="contacto" class="bg-gray-100 dark:bg-sky-950 py-20 px-30">
         <div class="max-w-xl mx-auto px-10 py-15 bg-white rounded-2xl shadow-lg dark:bg-gray-900">
-            <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-white mb-6">Contáctanos</h2>
+            <h2 class="text-2xl font-bold text-center text-gray-800 dark:text-white mb-6 uppercase">Contáctanos</h2>
 
             <form class="space-y-6">
                 <!-- Nombre -->

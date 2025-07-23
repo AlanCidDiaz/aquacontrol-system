@@ -22,11 +22,11 @@
 
                  <!-- Menú de navegación principal -->
                 <nav class="flex gap-5 items-center text-neutral-900 dark:text-white">
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#inicio">Inicio</a>
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#clases">Clases</a>
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#instructores">Instructores</a>
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#costos">Costos</a>
-                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="#contacto">Contacto</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="{{ request()->is('/') ? '#inicio' : '/#inicio' }}">Inicio</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="{{request()->is('/') ? '#clases' : '/#clases'}}">Clases</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="{{request()->is('/') ? '#instructores' : '/#instructores'}}">Instructores</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="{{request()->is('/') ? '#costos' : '/#costos'}}">Costos</a>
+                    <a class="uppercase font-black hover:text-white dark:hover:text-cyan-300 text-sm" href="{{request()->is('/') ? '#contacto' : '/#contacto'}}">Contacto</a>
                 </nav>
 
                  <!-- Botones de modo Dark y Light usando librería Lucide-->
